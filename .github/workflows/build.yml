@@ -16,12 +16,12 @@ jobs:
           repository: oneapi-src/level-zero
           path: level-zero
       - run: |
-        sudo apt-get update
-        sudo apt-get install -y \
-          libboost-all-dev \
-          libpapi-dev \
-          libpng-dev \
-          libva-dev
+          sudo apt-get update
+          sudo apt-get install -y \
+            libboost-all-dev \
+            libpapi-dev \
+            libpng-dev \
+            libva-dev
       - uses: hendrikmuhs/ccache-action@v1
       - name: Build Loader
         working-directory: level-zero
